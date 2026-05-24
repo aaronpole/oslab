@@ -24,7 +24,7 @@ int main() {
         return 1;
     }
 
-    else if (pid > 0){
+    else if (pid == 0){
         close(fd[0]);
         four_ac = 4*a*c;
         write(fd[1], &four_ac, sizeof(four_ac));
